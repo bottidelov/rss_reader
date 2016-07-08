@@ -1,0 +1,434 @@
+@CHARSET "UTF-8";
+
+/*全体設定****************************/
+
+html{
+	height:100%;
+    font-size:62.5%;/*ページ全体のデフォルトのフォントサイズ*//*初期値は16px=100%、62.5%は10px*/
+    color: #333333;/*ページ全体の文字色*/
+    margin: 0 auto;/*ページ上下左右の余白を消す*/
+    word-wrap: break-word;/*英文字を親要素の端で折り返すようにする*/
+
+    /*子要素の縦横中央揃え・親要素に設定*/
+   display: table;
+
+    font-family:"メイリオ","Lucida Grande", "HiraKakuPro-W3", sans-serif;
+}
+body{
+    height: 100%;
+    margin:0;
+
+	/*親要素tableに対して縦中央に設定 = 縦のセンタリング*/
+	display: table-cell;
+	vertical-align: middle;
+
+    /*横幅の固定設定*/
+    width:77rem;
+}
+.wrap{
+	height:100%;
+}
+
+/*その他要素の設定(本体)*******************/
+
+/*cssのリセット(bootstrap等との兼ね合いで調節)*/
+p,form{
+	margin:0;
+}
+textarea{
+	width:100%;
+	height:20rem;
+	resize: vertical;
+
+	border: 1px solid rgba( 204,204,204, 0.7 );
+    border: 0.1rem solid rgba( 204,204,204, 0.7 );
+}
+input{
+	width:70%;
+	margin:0.5rem 0;
+}
+.circle-btn{
+	width:6rem;
+	height:6rem;
+	border-radius: 6rem;
+	font-size:2.4rem;
+}
+.btn{
+    margin:0.5rem;
+    font-weight: bold;
+}
+.btn a,.btn a:hover{
+    text-decoration: none;
+    color:#fafafa;
+}
+#page-top{/*右下に固定*/
+	position: fixed;
+    right: 0;
+    bottom: 0;
+
+}
+/*見出しの設定*****************************************/
+
+h2{
+    font-family: 'Candal', sans-serif;
+    font-family: 'Pacifico', cursive;
+    color:	#b0b0b0;
+}
+h3{
+	font-size:130%;
+	font-family:"メイリオ","Lucida Grande", "HiraKakuPro-W3", sans-serif;
+	color:#888;
+}
+
+/*フォントカラー・サイズの設定***********************/
+
+.error{
+    color:#BF2121;
+    font-weight:bold;
+}
+.safe{
+    color:#2121BF;
+    font-weight:bold;
+}
+.bold{
+	font-weight:bold;
+}
+
+/*背景色*************************/
+.bg0{
+	background-image: url("../img/arabesque_s.jpg");
+	background-repeat: repeat;
+}
+.bg1{
+    background-color:rgba(245,245,245,0.70);
+}
+.bg2{
+    background-color:#004077;
+}
+.bg3{
+    background-color:#ed6d00;
+}
+.bg4{
+    background-color:#333;
+}
+
+/*余白の設定********************/
+
+.m-top5{
+    margin-top:5px;
+    margin-top:0.5rem;
+}
+.m-top7{
+    margin-top:7px;
+    margin-top:0.7rem;
+}
+.m-top10{
+    margin-top:10px;
+    margin-top:1rem;
+}
+.m-top15{
+    margin-top:15px;
+    margin-top:1.5rem;
+}
+.m-top20{
+    margin-top:20px;
+    margin-top:2rem;
+}
+.m-top30{
+    margin-top:30px;
+    margin-top:3rem;
+}
+.m-top40{
+    margin-top:40px;
+    margin-top:4rem;
+}
+.m-top100{
+    margin-top:100px;
+    margin-top:10rem;
+}
+.m-bottom5{
+    margin-bottom:5px;
+    margin-bottom:0.5rem;
+}
+.m-bottom10{
+    margin-bottom:10px;
+    margin-bottom:1rem;
+}
+.m-bottom15{
+    margin-bottom:15px;
+    margin-bottom:1.5rem;
+}
+.m-bottom20{
+    margin-bottom:20px;
+    margin-bottom:2.0rem;
+}
+.m-bottom30{
+    margin-bottom:30px;
+    margin-bottom:3.0rem;
+}
+.m-bottom40{
+    margin-bottom:40px;
+    margin-bottom:4.0rem;
+}
+.m-bottom50{
+    margin-bottom:50px;
+    margin-bottom:5.0rem;
+}
+.m-bottom60{
+    margin-bottom:60px;
+    margin-bottom:6.0rem;
+}
+.m-right5{
+    margin-right:5px;
+    margin-right:0.5rem;
+}
+.m-right10{
+    margin-right:10px;
+    margin-right:1rem;
+}
+.m-right15{
+    margin-right:15px;
+    margin-right:1.5rem;
+}
+.m-right20{
+    margin-right:20px;
+    margin-right:2rem;
+}
+.m-right25{
+    margin-right:25px;
+    margin-right:2.5rem;
+}
+.m-left5{
+    margin-left:5px;
+    margin-left:0.5rem;
+}
+.m-left10{
+    margin-left:10px;
+    margin-left:1rem;
+}
+.m-left15{
+    margin-left:15px;
+    margin-left:1.5rem;
+}
+.m-left20{
+    margin-left:20px;
+    margin-left:2rem;
+}
+.p-0{
+    padding:0;
+}
+.p-3{
+    padding:3px;
+    padding:0.3rem;
+}
+.p-5{
+    padding:5px;
+    padding:0.5rem;
+}
+.p-10{
+    padding:10px;
+    padding:1.0rem;
+}
+.p-15{
+    padding:15px;
+    padding:1.5rem;
+}
+.p-20{
+    padding:20px;
+    padding:2.0rem;
+}
+.p-30{
+    padding:30px;
+    padding:3.0rem;
+}
+/*幅の設定***************************/
+/*あわせて100%になるよう各要素に設定*/
+/*横幅*****/
+
+.w-3{
+    width:3%;
+}
+.w-5{
+    width:5%;
+}
+.w-7{
+    width:7%;
+}
+.w-10{
+    width:10%;
+}
+.w-20{
+    width:20%;
+}
+.w-30{
+    width:30%;
+}
+.w-40{
+    width:40%;
+}
+.w-50{
+    width:50%;
+}
+.w-60{
+    width:60%;
+}
+.w-70{
+    width:70%;
+}
+.w-80{
+    width:80%;
+}
+.w-90{
+    width:90%;
+}
+.w-100{
+    width:100%;
+}
+.w-auto{
+    width:auto;
+}
+.m-w100{
+	max-width:100%;
+}
+
+/*縦幅*****/
+
+.h-5{
+    height:5%;
+}
+.h-10{
+    height:10%;
+}
+.h-20{
+    height:20%;
+}
+.h-30{
+    height:30%;
+}
+.h-40{
+    height:40%;
+}
+.h-50{
+    height:50%;
+}
+.h-60{
+    height:60%;
+}
+.h-70{
+    height:70%;
+}
+.h-80{
+    height:80%;
+}
+.h-90{
+    height:90%;
+}
+.h-100{
+    height:100%;
+}
+.h-auto{
+    height:auto;
+}
+
+
+/*影の設定****************************/
+
+.boxShadow{
+    box-shadow:0px 0px 6px #999;/*最初のpxが左右ズレ、次が上下、最後がボカシ*/
+    -moz-box-shadow: 0px 0px 6px #999;
+    -webkit-box-shadow: 0px 0px 6px #999;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#999, direction=0, strength=3, enabled=true),
+     progid:DXImageTransform.Microsoft.Shadow(color=#999, direction=90, strength=3, enabled=true), progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa, direction=180, strength=3, enabled=true),
+     progid:DXImageTransform.Microsoft.Shadow(color=#999, direction=270, strength=3, enabled=true);
+    border-radius: 5px;border-radius: 0.5rem;
+    border-collapse: separate;
+}
+.topShadow{
+    box-shadow: 0px -7px 10px -5px rgba(204, 204, 204, 0.7);box-shadow: 0px -0.7rem 1rem -0.5rem rgba(204, 204, 204, 0.7);
+}
+.underShadow{
+    box-shadow: 0px 10px 10px -5px rgba(204, 204, 204, 0.7);box-shadow: 0px 1rem 1rem -0.5rem rgba(204, 204, 204, 0.7);
+}
+.textShadow{
+    text-shadow:-1px -1px 1px rgba(255,255,255,0.5),1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow:-0.1rem -0.1rem 0.1rem rgba(255,255,255,0.5),0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5);
+}
+
+/*ボックス・ライン**********/
+
+.textBox{
+    border: 1px solid rgba( 204,204,204, 0.7 );
+    border: 0.1rem solid rgba( 204,204,204, 0.7 );
+}
+.imgFrame{
+    border: 1px solid rgba( 204,204,204, 0.7);
+    border: 0.1rem solid rgba( 204,204,204, 0.7 );
+}
+.doubleBox{
+    border: 3px double rgba( 204,204,204, 0.7 );
+    border: 0.3rem double rgba( 204,204,204, 0.7 );
+    background-color:#fff;
+}
+.updownBox{
+    border-top: 1px solid rgba( 204,204,204, 0.7 );
+    border-top: 0.1rem solid rgba( 204,204,204, 0.7 );
+    border-bottom: 1px solid rgba( 204,204,204, 0.7 );
+    border-bottom: 0.1rem solid rgba( 204,204,204, 0.7 );
+}
+.border-top{
+    border-top:1px dashed rgba( 204,204,204, 0.7 );
+    border-top:0.1rem dashed rgba( 204,204,204, 0.7 );
+}
+.border-right{
+    border-right:3px double rgba( 204,204,204, 0.7 );
+    border-right:0.3rem double rgba( 204,204,204, 0.7 );
+}
+.border-left{
+    border-left:1px solid rgba( 204,204,204, 0.7 );
+    border-left:0.1rem solid rgba( 204,204,204, 0.7 );
+}
+.under-line{
+    border-bottom:1px dotted rgba( 204,204,204, 0.7 );
+    border-bottom:0.1rem dotted rgba( 204,204,204, 0.7 );
+    line-height:1.5;
+}
+
+/*要素の位置**********/
+
+.inline{/*指定した要素を横並び、内容物に幅を依存させる p・divに設定*/
+    display:inline;
+}
+.block{
+    display:block;
+}
+.inline-block{
+    display:inline-block;
+}
+.centerImg{/*imgに設定し左右中央揃え*/
+    display:block;
+    margin:0 auto;
+}
+.imgCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+.v-center_p{/*垂直中央揃え・親要素に設定*/
+    display: table-cell;
+}
+.v-center_c{/*垂直中央揃え・子要素に設定*/
+    vertical-align: middle;
+    line-height: 50px;line-height: 5rem;
+}
+
+/*BSに定義されているcssは省略
+中央揃え = .text-center、
+右float = .pull-right、
+clearFix = .clearfix、
+リストの横並び = .list-inline、
+margin:0 auto = .center-block
+ulのリスト整形 = .list-group
+画像のレスポンシブ化 = .img-responsive
+等
+*/
